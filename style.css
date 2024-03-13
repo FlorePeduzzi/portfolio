@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color : Black;
+    padding: 5px;
+}
+
+.container{
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.infos{
+    font-family: 'DM Sans', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rgb(24, 211, 24);
+}
+
+header h1{
+    font-weight: 600;
+    font-size: 120%;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+header h2{
+    font-weight: 400;
+    font-size: 90%;
+    letter-spacing: 3px;
+    color: rgb(24, 211, 24);
+}
+
+nav{
+    display: none;
+}
+
+.menu_burger{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 8%;
+}
+
+/* Zone cliquable englobant l'icône */
+.hamburger-label {
+    padding: 20px; /* Agrandit la zone cliquable */
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+.hamburger-icon {
+    width: 30px;
+    height: 2px; /* Hauteur de la ligne centrale */
+    background-color:rgb(24, 211, 24);
+    position: relative;
+    display: flex; /* Assure que les éléments internes sont centrés */
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    /* Détermine les traits haut et bas de mon icone burger */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Hauteur des lignes */
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger-icon::before {
+    bottom: 10px;
+    background-color: rgb(24, 211, 24);
+  }
+
+  .hamburger-icon::after {
+    top: 10px;
+    background-color: rgb(24, 211, 24);
+  }
+
+
+#toggle:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    padding: 5px;
+    background-color: #f0f0f0;
+    display: none;
+    font-family: "Source Code Pro", monospace;
+    background-color: white;
+    font-size: 80%;
+  }
+
+  .coche-hamburger-menu{
+    display: none;
+  }
+  
+h3 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 100%;
+    padding: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.main1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_prez{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    width:300px;
+}
+
+.main1_p{
+    font-family: 'DM Sans', monospace;
+    font-weight: 400;
+    font-size: 80%;
+    line-height: 150%;
+    width: 90%;
+    text-align: center;
+    padding-top: 5px;
+}
+.menu a{
+    padding-bottom: 7%;
+}
+.menu a:last-child{
+    padding-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    }
+
+.main_skills{
+    border-radius: 15px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rgb(24, 211, 24);
+    background-color: rgb(16, 15, 16);
+    font-weight: 300;
+    width: 90%;
+    margin: 3%;
+
+}
+
+.date{
+    border: 1px solid;
+    border-color: rgb(24, 211, 24);
+    width: 18%;
+    text-align: center;
+    font-size: 90%;
+}
+
+
+.titres_skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.p_skills{
+    font-family: "Dm Sans", monospace;
+    font-size: 80%;
+    line-height: 150%;
+    text-align:justify;
+    color: white;
+    padding : 5%;
+    padding-top: 5%;
+}
+
+h4{
+    font-family: 'DM Sans', monospace;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    padding-left: 5%;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+h5{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    color: rgb(251, 251, 251);
+    padding: 10px;
+}
+
+.main4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20;
+}
+
+.img_projets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: x-small;
+    font-family: "Source Code Pro", monospace;
+}
+
+figcaption {
+    text-align:center;
+}
+
+img{
+    border : 2px rgb(24, 211, 24);
+    border-style: dotted;
+    border-radius: 10px;
+    height: auto;
+    max-width: 100%;
+   }
+
+img:nth-child(5){
+    filter: grayscale(100%);
+}
+
+footer{
+    width: 80%;
+    margin-top: 25px;
+}
+.boutonfooter{
+    background-color: rgb(24, 211, 24);
+    border-radius: 15px;
+    border: 2px solid;
+    font-size: 70%;
+    font-weight: 600;
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px;
+}
+
+button{
+    background-color: rgb(24, 211, 24);
+    border-radius: 15px;
+    border: 2px solid;
+    font-size: 80%;
+    font-weight: 600;
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+.footerbtn{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 100%;
+
+}
+
+.lastfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-between;
+    font-size: 80%;;
+    padding-top: 15%;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.icones{
+    margin: 20px;
+    width: 12%;
+}
+
+.label{
+    font-family: 'Source code Pro', monospace ;
+    font-size: 90%;
+    color: black ;
+}
+
+.input{
+    width: 88%;
+    height: 50px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(24, 211, 24);
+}
+
+#message {
+    width: 280px;
+    height: 200px;
+    margin: 20px;
+    margin-bottom: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(24, 211, 24)
+}  
+
+
+@media screen and (min-width: 600px){
+    
+      .menu_burger{
+        display: none;
+      }
+    
+    body{
+        color : white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .container{
+        background-color: #1b1a1a;
+        color : white;
+        width : 80%;
+        margin:0 auto;
+        padding: 20px;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        }
+
+    nav{
+        width: 95%;
+        font-family: 'DM Sans', monospace;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        font-size: 18px;
+        word-spacing: 80%;
+        margin-bottom: 20px;
+        border-bottom: 2px solid rgb(24, 211, 24);
+        padding-top: 40px;
+        padding-bottom:20px ;
+        
+    }
+    
+    nav :first-child{
+        word-spacing: 2px;
+    }
+    
+    nav a:hover {
+        color: rgb(24, 211, 24);
+    }
+    
+    header h1{
+        font-weight: 600;
+        font-size: 250%;
+
+    }
+    
+    header h2{
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .infos{
+        width: 90%;
+
+    }
+    .img_prez{
+        width:500px;
+        margin-top: 3%;
+    }
+
+    .main1_p{
+        font-weight: 200;
+        font-size: 130%;
+        padding-top: 20px;
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    .boutonfooter{
+        font-size: 90%;
+        font-weight: 600;
+        color :black
+    }
+
+    .footerbtn{
+        width: 100%;
+    }
+
+    .lastfooter {
+        padding-top: 7%;
+        color: white;
+    }
+
+    h3 {
+        font-size: 150%;
+    }
+
+    h4{
+        padding-bottom: 3%;
+    }
+
+    h5{
+        letter-spacing: 3px;
+        word-spacing: 10px;
+        padding-bottom: 0;
+    }
+
+    .beth_sacca{
+        width: 500px;
+    }
+
+    .main_skills{
+        width: 100%;
+        font-size: 120%;
+    }
+
+    .titres_skills{
+        padding-bottom: 20px;
+    }
+    .p_skills{
+        padding-top: 0;
+    }
+    
+    .label{
+        color: rgb(24, 211, 24) ;
+    }
+
+    .input{
+        width: 400px;
+    }
+
+    #message{
+        width: 400px;
+    }
+
+    button a{
+        color: black;
+    }
+}
+
+@media screen and (min-width:768px){
+
+    body{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .input{
+        width: 600px;
+    }
+
+    #message{
+        width: 600px;
+    }
+    
+    .label{
+        font-size: 160%;
+    }
+
+    .lastfooter {
+        font-size: 150%;
+    }
+
+    .boutonfooter{
+        font-size: 120%;
+        font-weight: 500;
+    }
+
+    nav{
+        font-size: 150%;
+    }
+
+    header h1{
+        font-weight: 600;
+        font-size: 300%;
+    }
+    
+    header h2{
+        font-weight: 400;
+        font-size: 250%;
+    }
+
+    .main1_p{
+        font-size: 160%;
+    }
+
+    h3 {
+        font-size: 200%;
+    }
+
+    h4{
+        font-size: 150%;
+        padding-top: 40px;
+    }
+
+    h5{
+        font-size: 120%;
+    }
+
+    .p_skills{
+        font-size: 120%;
+    }
+
+    .icones{
+        margin: 30px;
+        width: 8%;
+    }
+}
