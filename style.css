@@ -144,7 +144,7 @@ h3 {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 20px;
-    width:90%;
+    width:80%;
 }
 
 .main1_p{
@@ -241,11 +241,13 @@ h5{
     padding-left: 5%;
     padding-right: 5%;
     font-size: x-small;
+    font-weight: 600;
     font-family: "Source Code Pro", monospace;
 }
 
 figcaption {
     text-align:center;
+    padding-top: 2px;
 }
 
 img{
@@ -338,9 +340,9 @@ button{
 
 @media screen and (min-width: 600px){
     
-      .menu_burger{
+    .menu_burger{
         display: none;
-      }
+    }
     
     body{
         color : white;
@@ -440,7 +442,15 @@ button{
     h5{
         letter-spacing: 3px;
         word-spacing: 10px;
-        padding-bottom: 0;
+        padding: 1%;
+    }
+
+    .date{
+        padding: 1%;
+    }
+
+    .log_gm{
+        width: 500px;
     }
 
     .beth_sacca{
@@ -473,6 +483,11 @@ button{
 
     button a{
         color: black;
+    }
+
+    .img_projets{
+        font-size: small;
+        font-weight: 600;
     }
 }
 
