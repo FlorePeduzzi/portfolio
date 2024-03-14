@@ -245,6 +245,10 @@ h5{
     font-family: "Source Code Pro", monospace;
 }
 
+.boule_facettes{
+    width: 250px;
+}
+
 figcaption {
     text-align:center;
     padding-top: 2px;
@@ -389,7 +393,6 @@ button{
     header h1{
         font-weight: 600;
         font-size: 250%;
-
     }
     
     header h2{
@@ -490,6 +493,7 @@ button{
         font-size: small;
         font-weight: 600;
     }
+
 }
 
 @media screen and (min-width:768px){
