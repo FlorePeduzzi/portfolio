@@ -116,7 +116,7 @@ nav{
     display: none;
     font-family: "Source Code Pro", monospace;
     background-color: white;
-    font-size: 80%;
+    font-size: 100%;
   }
 
   .coche-hamburger-menu{
@@ -251,8 +251,8 @@ figcaption {
 }
 
 img{
-    border : 2px rgb(24, 211, 24);
-    border-style: dotted;
+    border : 1px rgb(24, 211, 24);
+    border-style: solid;
     border-radius: 10px;
     height: auto;
     max-width: 100%;
